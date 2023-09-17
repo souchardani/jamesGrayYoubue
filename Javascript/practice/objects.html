@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Objects</h1>
+    <script>
+      //template
+      const Person = {
+        name: null,
+        age: null,
+        job: null,
+        sayHi: function () {
+          console.log(`Hello, I am ${this.name} and work as a ${this.job}`);
+        },
+      };
+
+      const Daniel = Object.create(Person);
+      Daniel.name = "Daniel";
+      Daniel.age = 25;
+      Daniel.job = "Web Developer";
+
+      Daniel.sayHi();
+
+      console.log(Daniel.job);
+    </script>
+  </body>
+</html>

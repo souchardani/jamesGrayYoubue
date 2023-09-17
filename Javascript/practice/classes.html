@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Classes</h1>
+    <script>
+      class Person {
+        constructor(name, age, job) {
+          this.name = name;
+          this.age = age;
+          this.job = job;
+        }
+        salute() {
+          console.log(`Hello my name is ${this.name}`);
+        }
+        goodbye() {
+          console.log(`bye, I need to go to to work to ${this.job}`);
+        }
+      }
+
+      const Daniel = new Person("Daniel", "24", "Web Developer");
+      Daniel.salute();
+      Daniel.goodbye();
+      console.log(Daniel.age);
+    </script>
+  </body>
+</html>
