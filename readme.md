@@ -1,1 +1,1 @@
-completed section: until section 17 classes
+completed section js: until section 18 json
